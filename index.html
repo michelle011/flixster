@@ -4,28 +4,31 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flixster</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Flixster 🍿</title>
+
+    <link rel="stylesheet" href="./style.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
     </style>
 </head>
 <body>
-    <h1>Flixster</h1>
-    <form id="search-form">
-        <input id="search-input" name="search" placeholder="Search" class="" />
-        <button type="submit" class="search-btn">Search</button>
-    </form>
+    <h1 id="main-title">Flixster 🍿</h1>
+    <div id="search-bar">
+        <form>
+            <input type="text" id="search-input" name="search-input" placeholder="Search 🔎" required>
+        </form>
+    </div>
 
-    <div id="movie-area">
-    <h1>
-        hellooo
-    </h1>
+    <div id="result-type">
+        <h2 id="now-playing">In Theaters 🎬</h2>
+        <h2 id=search-title class="hidden"></h2>
+        <button type="button" id="exit-search-btn" class="hidden">Exit search</button>
     </div>
-    
-    <div class="show-more-area">
-        <button id="show-me-more-btn" type="button" class="search-btn hidden">Show more</button>
-    </div>
+
+    <div id="movies-grid"></div>
+
+    <button type="button" id="load-more-movies-btn">Show more 🎞</button>
+
     <script src="script.js"></script>
 </body>
 </html>
