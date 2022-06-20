@@ -1,5 +1,5 @@
 /* Global Constants */
-const apiKey = '03a0bef92ef5c5949f333c1f4de9ffbf'
+const apiKey = ''
 const baseUrl = 'https://api.themoviedb.org/3/'
 const imageUrl = 'https://image.tmdb.org/t/p/original'
 let pageSize = 20;
