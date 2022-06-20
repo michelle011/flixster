@@ -1,7 +1,8 @@
 /* Global Constants */
-const apiKey = ''
+const apiKey = '03a0bef92ef5c5949f333c1f4de9ffbf'
 const baseUrl = 'https://api.themoviedb.org/3/'
 const imageUrl = 'https://image.tmdb.org/t/p/original'
+let pageSize = 20;
 
 /* Page Elements
 Key: use querySelector in place of getElementByID for more versatility in CSS */
@@ -84,7 +85,7 @@ function displayResults(results) {
     // Adds each movie in the array
     results.forEach((movie, index) => {
         movieArea.innerHTML += `
-        <div class='movie-card' id='${((currApiPage - 1) * 20) + index}'>
+        <div class='movie-card' id='${(currApiPage * pageSize) + index}'>
             <img src=${imageUrl + movie.poster_path} class=movie-poster alt='${movie.original_title}' title='${movie.original_title}' width=100%>
             <p class='movie-votes'>⭐️ ${movie.vote_average}</p>
             <p class='movie-title'>${movie.title}</p>
