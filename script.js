@@ -2,7 +2,7 @@
 const apiKey = ''
 const baseUrl = 'https://api.themoviedb.org/3/'
 const imageUrl = 'https://image.tmdb.org/t/p/original'
-let pageSize = 20;
+const pageSize = 20;
 
 /* Page Elements
 Key: use querySelector in place of getElementByID for more versatility in CSS */
